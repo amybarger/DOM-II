@@ -21,12 +21,17 @@ navBarChange.addEventListener("click", () => {
     navBarChange.style.color = "pink"
 })
 
-let busPicture = document.querySelector(".main-navigation")
-busPicture.addEventListener("dblclick", () => {
-    busPicture.style.border = "8px dotted blue"
+let navWithDots = document.querySelector(".main-navigation")
+navWithDots.addEventListener("dblclick", () => {
+    navWithDots.style.border = "8px dotted blue"
 })
 
-let selectedText = document.querySelector("h2")
-selectedText = addEventListener("mousemove", () => {
-    selectedText.style.color = "green"
+let resizeText = document.querySelector("h2")
+window.addEventListener("resize", () => {
+    resizeText.style.color = "green"
+})
+
+let picsDisappear = document.querySelector(".img-content")
+document.addEventListener("keydown", () => {
+    picsDisappear.style.display = "none"
 })
