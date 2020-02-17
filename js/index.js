@@ -35,3 +35,19 @@ let picsDisappear = document.querySelector(".img-content")
 document.addEventListener("keydown", () => {
     picsDisappear.style.display = "none"
 })
+
+let copyrightGrow = document.querySelector(".footer")
+copyrightGrow.addEventListener("contextmenu", () => {
+    copyrightGrow.style.backgroundColor = "orange"
+})
+
+let textCopy = document.querySelector("p")
+textCopy.addEventListener("copy", () => {
+    textCopy.style.color = "plum"
+})
+
+let footerSelect = document.querySelector(".btn")
+footerSelect.addEventListener("mouseover", () => {
+    footerSelect.style.border = "2px solid pink"
+})
+
