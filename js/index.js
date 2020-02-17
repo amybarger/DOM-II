@@ -25,3 +25,8 @@ let busPicture = document.querySelector(".main-navigation")
 busPicture.addEventListener("dblclick", () => {
     busPicture.style.border = "8px dotted blue"
 })
+
+let selectedText = document.querySelector("h2")
+selectedText = addEventListener("mousemove", () => {
+    selectedText.style.color = "green"
+})
